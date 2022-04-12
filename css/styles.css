@@ -1,0 +1,55 @@
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 3;
+}
+
+.slides-navigation .next,
+.slides-navigation .prev {
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.slides-navigation a.next {
+    right: 15px;
+    background-image: url("../img/icons/right.png");
+}
+
+.slides-navigation a.prev {
+    left: 15px;
+    background-image: url("../img/icons/left.png");
+}
+
+.titleMessage {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    top: 50%;
+    z-index: 6;
+    text-align: center;
+    margin-top: -200px;
+}
+
+.titleMessage .heading p {
+    color: #ffffff;
+    /*text-shadow: 6px 6px 6px #C6E746;*/
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+.titleMessage .heading .main {
+    font-size: 80px;
+}
+
+
+.titleMessage .heading .sub {
+    font-size: 30px;
+}
+
+.slides-navigation {
+    z-index: 6;
+}
