@@ -53,3 +53,11 @@
 .slides-navigation {
     z-index: 6;
 }
+
+.section {
+    padding: 100px;
+}
+
+.aboutImage {
+    max-width: 100%;
+}
