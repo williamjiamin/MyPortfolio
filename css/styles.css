@@ -106,3 +106,50 @@ body {
     display: inline-block;
     font-size: 40px;
 }
+
+.squareItem {
+    margin-top:40px;
+    position:relative;
+}
+
+.squareInnerContainer {
+    position:relative;
+    border:2px solid  #444;
+    border-top:none;
+    padding: 50px 30px 45px;
+    text-align: center;
+
+}
+
+.squareInnerContainer:before,
+.squareInnerContainer:after{
+    content: '';
+    position:absolute;
+    top:0px;
+    width:30%;
+    border-bottom:2px solid #444;
+}
+
+
+.squareInnerContainer:before {
+    right:0px;
+}
+
+
+.squareInnerContainer:after {
+    left:0px;
+}
+
+.squareInnerContainer h2 {
+    font-size: 30px;
+    font-weight:300;
+    color:red;
+    margin-bottom:20px;
+}
+
+
+.squareInnerContainer h3 {
+    font-size: 20px;
+    font-weight:200;
+    margin: 0;
+}
