@@ -8,7 +8,7 @@ body {
     width: 100%;
     height: 100%;
     position: absolute;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.4);
     z-index: 3;
 }
 
@@ -68,7 +68,8 @@ body {
     max-width: 100%;
 }
 
-.skillSection {
+.skillSection,
+.contactSection {
     background-color: #171010;
     color: #EDEDED;
 }
@@ -108,59 +109,74 @@ body {
 }
 
 .squareItem {
-    margin-top:40px;
-    position:relative;
+    margin-top: 40px;
+    position: relative;
 }
 
 .squareInnerContainer {
-    position:relative;
-    border:2px solid  #444;
-    border-top:none;
+    position: relative;
+    border: 2px solid #444;
+    border-top: none;
     padding: 50px 30px 45px;
     text-align: center;
 
 }
 
 .squareInnerContainer:before,
-.squareInnerContainer:after{
+.squareInnerContainer:after {
     content: '';
-    position:absolute;
-    top:0px;
-    width:30%;
-    border-bottom:2px solid #444;
+    position: absolute;
+    top: 0px;
+    width: 30%;
+    border-bottom: 2px solid #444;
 }
 
 
 .squareInnerContainer:before {
-    right:0px;
+    right: 0px;
 }
 
 
 .squareInnerContainer:after {
-    left:0px;
+    left: 0px;
 }
 
 .squareInnerContainer h2 {
     font-size: 30px;
-    font-weight:300;
-    color:red;
-    margin-bottom:20px;
+    font-weight: 300;
+    color: red;
+    margin-bottom: 20px;
 }
 
 
 .squareInnerContainer h3 {
     font-size: 20px;
-    font-weight:200;
+    font-weight: 200;
     margin: 0;
 }
 
 .squareIcon {
     position: absolute;
     left: 50%;
-    top:-40px;
-    width:40%;
+    top: -40px;
+    width: 40%;
     height: 60px;
-    font-size:50px;
+    font-size: 50px;
     margin-left: -20%;
-    color:black;
+    color: black;
+}
+
+.contactButton {
+    color: #dfdfdf;
+    padding: 20px;
+    display: inline-block;
+    margin-top: 25px;
+    border: 2px #dfdfdf solid;
+    border-radius: 15px;
+}
+
+.contactButton:hover {
+    text-decoration: none;
+    color: #1a1a1a;
+    background-color: #dfdfdf;
 }
