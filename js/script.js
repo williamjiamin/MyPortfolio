@@ -68,6 +68,18 @@ $(document).ready(function () {
     });
 
 
+    $("[data-fancybox]").fancybox();
+
+    $(".items").isotope({
+        filter:'*',
+        animationOption: {
+            duration: 1000,
+            easing: 'linear',
+            queue: false
+        }
+    })
+
+
 
 
 });
