@@ -55,7 +55,7 @@ $(document).ready(function () {
         }
 
         if (!countUpFinished && window.scrollY > statsTopOffset - $(window).height() + 150) {
-            $(".counter").each(function(){
+            $(".counter").each(function () {
                 var element = $(this);
                 var endVal = parseInt(element.text());
 
@@ -71,15 +71,33 @@ $(document).ready(function () {
     $("[data-fancybox]").fancybox();
 
     $(".items").isotope({
-        filter:'*',
+        filter: '*',
         animationOption: {
             duration: 1000,
             easing: 'linear',
             queue: false
         }
-    })
+    });
 
 
+    $("#filters a").click(function () {
+
+        $("#filters .current").removeClass("current");
+        $(this).addClass("current");
+
+        var selector = $(this).attr("data-filter");
+
+        $(".items").isotope({
+            filter: selector,
+            animationOptions: {
+                duration: 1500,
+                easing: 'linear',
+                queue: false
+            }
+        });
+
+        return false;
+    });
 
 
 });
